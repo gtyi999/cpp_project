@@ -12,21 +12,23 @@ int main(){
 
     p=(char*)&a;
     for (k=0;k< sizeof(a);k++){
-        printf("%x ",*(p++));
+        //printf("%x ",*(p++));
+        printf("%02x ",(unsigned char)*(p++));
     }
     printf("\n");
 
     p=(char*)&i;
     for(k=0;k< sizeof(i);k++){
-        printf("%x ",*(p++));
+        //printf("%x ",*(p++));
+        printf("%02x ",(unsigned char)*(p++));
 
     }
 
     printf("\n");
-    printf("i=%u  | %d\n",i,i);
+    printf("i=%u  | %d\n",i,i);//%u：无符号十进制整数
     printf("a=%u | %d\n",a,a);
 
-    printf("res=%d\n",(-1>0u ? 1:0));
+    printf("res=%d\n",(-1>0u ? 1:0));//无符号数比较  -1转化为一个大数  所以结果为1
     printf("hello world\n");
 
     return 0;
