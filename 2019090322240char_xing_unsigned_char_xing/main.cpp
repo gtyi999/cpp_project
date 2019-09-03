@@ -14,7 +14,7 @@ int main(){
     for (k=0;k< sizeof(a);k++){
         printf("%x ",*(p++));
     }
-    printf("\n")
+    printf("\n");
 
     p=(char*)&i;
     for(k=0;k< sizeof(i);k++){
@@ -22,7 +22,7 @@ int main(){
 
     }
 
-    printff("\n");
+    printf("\n");
     printf("i=%u  | %d\n",i,i);
     printf("a=%u | %d\n",a,a);
 
